@@ -17,15 +17,15 @@ public class notas {
 	 */
 
 	//declaramos la variables que nos hacen falta
-		double uf4, uf5, uf6;
-		double acu1, acu2, acu3, def;
+		double  uf4, uf5, uf6,uf7;
+		double acu1, acu2, acu3,acu4, def;
 		//utilizamos Scaner para poder introducir datos
 		Scanner entrada = new Scanner(System.in);
 		
 		///vamos ca crear un metodo para ingresar 
 		/**
 		 * metodo que permite introducir los parametros 
-		 * @param uf4, uf5, uf6  variables con el valor de las notas 
+		 * @param uf4, uf5, uf6, uf7 variables con el valor de las notas 
 		 */
 		public void IngresaNotas() {
 			//cuando ejeuctamos este metodo lo primnero que queremos es que nos pida notas
@@ -43,6 +43,10 @@ public class notas {
 			System.out.print("ingrese nota 3: ");
 			
 			uf6= entrada.nextDouble();
+			
+			System.out.print("ingrese nota 4: ");
+			
+			uf7= entrada.nextDouble();
 			
 		
 		}
@@ -73,7 +77,12 @@ public class notas {
 			}else {
 				System.out.println(" nota3 correcta");
 			}
-			
+			if (uf7>10) {
+				System.out.println(" nota4 mal introducida");
+				
+			}else {
+				System.out.println(" nota4 correcta");
+			}
 				
 			
 			
@@ -86,11 +95,11 @@ public class notas {
 		 * @param  def variable con el valor de la suma las notas parciales 
 		 */
 		public void Calculonotas() {
-			acu1= uf4*0.35;
+			acu1= uf4*0.25;
 			acu2 = uf5 * 0.35;
 			acu3 = uf6 * 0.30;
-			
-			def = acu1 + acu2+ acu3;
+			acu4= uf7 * 0.10;
+			def = acu1 + acu2+ acu3+ acu4;
 			
 			//hasta aqui la tenemos calculada peor no la mostramos
 		}
@@ -104,14 +113,17 @@ public class notas {
 			System.out.println(" nota1 = " + uf4);
 			System.out.println(" nota2 = " + uf5);
 			System.out.println(" nota3 = " + uf6);
+			System.out.println(" nota4 = " + uf7);
 			
 			System.out.println(" acumuado 1 = "+ acu1);
 			System.out.println(" acumuado 2 = "+ acu2);
 			System.out.println(" acumuado 3 = "+ acu3);
+			System.out.println(" acumuado 4 = "+ acu4);
 			
 			System.out.println(" nota definitiva es = "+ def);
 			
 		}
+	
 		/**
 		 * metodo de verificacion del valor de la nota 
 		 * @return sin el valor este entre 0-5 suspendido  y  5-10   aprovado  por encima o debajo error
