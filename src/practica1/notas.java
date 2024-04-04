@@ -42,7 +42,7 @@ public class notas {
 			uf5= entrada.nextDouble();
 			System.out.print("ingrese nota 3: ");
 			
-			uf5= entrada.nextDouble();
+			uf6= entrada.nextDouble();
 			
 		
 		}
