@@ -134,7 +134,7 @@ public class notas {
 					System.out.println("has suspendido, deberas recuperar");
 				}else {
 					if (def>=5 && def<=10 ) {
-					System.out.println(" bien, has  aprobado");
+					System.out.println(" bien, has aprobado");
 					}else {
 						System.out.println("  se ha producido un error error en la notas");
 					}
