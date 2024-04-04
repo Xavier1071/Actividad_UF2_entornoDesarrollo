@@ -29,14 +29,13 @@ public class notas {
 		 */
 		public void IngresaNotas() {
 			//cuando ejeuctamos este metodo lo primnero que queremos es que nos pida notas
-			System.out.println("ingrese las notas del estudiante");
+			System.out.println("ingrese las  4 notas del estudiante");
 			
 			System.out.print("ingrese nota 1: ");
 			
 			uf4= entrada.nextDouble();
 
-			
-			
+					
 			System.out.print("ingrese nota 2: ");
 			
 			uf5= entrada.nextDouble();
@@ -59,29 +58,29 @@ public class notas {
 		public void comprobarcion(){
 			
 			if (uf4>10) {
-				System.out.println(" nota1 mal introducida");
+				System.out.println(" nota 1 mal introducida");
 				
 			}else {
-				System.out.println(" nota1 correcta");
+				System.out.println(" nota 1 correcta");
 			}
 			
 			if (uf5>10) {
-				System.out.println(" nota2 mal introducida");
+				System.out.println(" nota 2 mal introducida");
 				
 			}else {
-				System.out.println(" nota2 correcta");
+				System.out.println(" nota 2 correcta");
 			}
 			if (uf6>10) {
-				System.out.println(" nota3 mal introducida");
+				System.out.println(" nota 3 mal introducida");
 				
 			}else {
-				System.out.println(" nota3 correcta");
+				System.out.println(" nota 3 correcta");
 			}
 			if (uf7>10) {
-				System.out.println(" nota4 mal introducida");
+				System.out.println(" nota 4 mal introducida");
 				
 			}else {
-				System.out.println(" nota4 correcta");
+				System.out.println(" nota 4 correcta");
 			}
 				
 			
@@ -135,9 +134,9 @@ public class notas {
 					System.out.println("has suspendido, deberas recuperar");
 				}else {
 					if (def>=5 && def<=10 ) {
-					System.out.println(" bien has  aprobado");
+					System.out.println(" bien, has  aprobado");
 					}else {
-						System.out.println(" error en la notas");
+						System.out.println("  se ha producido un error error en la notas");
 					}
 				}
 			}
